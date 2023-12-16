@@ -8,3 +8,5 @@ Technology stack:
 - BEM
 - JS
 - VITE
+
+Project live: [click here](https://dominikhebda.github.io/Luxury-Yachts---practice-project/)
