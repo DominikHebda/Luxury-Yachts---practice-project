@@ -122,10 +122,7 @@
         width: 100%;
         margin: 0 16px;
         white-space: nowrap;
-        
     }
-
-    
 
     &__btn {
         font-family: $mainFontFamily;
@@ -142,13 +139,8 @@
         .frontpage__dropdown-menu {
         display: block;
         top: 100%;
-        
         }
-        transition: 450ms;
     }
-
-   
-    
 
     &__triangle {
         width: 0;
@@ -180,8 +172,7 @@
         white-space: nowrap;
         min-width: 10rem;
         background-color: $mainFontColor;
-        transition: 450ms;
-        
+        transition: 450ms; 
     }
 
     &__dropdown-item:last-child {
@@ -191,6 +182,96 @@
 
     &__dropdown-item:hover {
         background-color: #c2eeeb;
+    }
+
+    &__nav-right {
+        display: flex;
+        width: 200px;
+    }
+
+    &__login-btn {
+        padding: 19px 15px 19px 0;
+        align-items: center;
+    }
+
+    &__cart-html {
+        color: $mainFontColor;
+        font-family: $mainFontFamily;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart-items {
+        margin: 0 0 0 5px;
+    }
+
+    &__serchclick {
+        color: $mainFontColor;
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+    &__hamburger {
+        display: flex;
+        width: 100%;
+    }
+
+    &__button-hamb {
+        width: 100%;
+        padding: 4px 12px;
+        background-color: $mainBackgroundColor;
+        border: none;
+    }
+
+    &__hamb-inner {
+        padding: 15px;
+        cursor: pointer;
+        width: 40px;
+        height: 24px;
+        position: relative;
+        display: inline-block;
+        transition: 450ms;
+    }
+
+    &__hamb-inner:hover {
+        opacity: 0.7;
+    }
+
+    &__hamb-box {
+        width: 40px;
+        height: 1px;
+        border-radius: 4px;
+        background-color: $mainFontColor;
+        position: absolute;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    &__hamb-box::after {
+        content: '';
+        width: 40px;
+        height: 1px;
+        border-radius: 4px;
+        background-color: $mainFontColor;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    &__hamb-box::before {
+        content: '';
+        width: 40px;
+        height: 1px;
+        border-radius: 4px;
+        background-color: $mainFontColor;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        translate: -50% 0;
     }
 }
 
