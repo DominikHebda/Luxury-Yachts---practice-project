@@ -201,12 +201,19 @@
         position: relative;
     }
 
+    &__login-btn:hover {
+        .frontpage__cart-preview {
+            display: block;
+        }
+    }
+
     &__cart-html {
         color: $mainFontColor;
         font-family: $mainFontFamily;
         padding: 10px 12px;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     &__cart-items {
@@ -224,6 +231,7 @@
         top: 100%;
         left: 50%;
         translate: -50% 0;
+        display: none;
     }
 
     &__cart-title {
@@ -310,7 +318,38 @@
         align-items: center;
         padding: 0 5px;
         cursor: pointer;
+        position: relative;
+        
     }
+
+    // SEARCH BAR
+
+    &__nav-search-form{
+        display: flex;
+        position: absolute;
+        right: 45px;
+        width: 36%;
+        top: 100%;
+        padding: 25px;
+        background-color: $mainBlockBackgroundColor;
+    }
+
+    &__search-control {
+        padding: 11px 12px;
+        border: 1px solid $mainFontColor;
+        background-color: $mainBlockBackgroundColor;
+        color: $mainFontColor;
+        width: 100%;
+    }
+
+    &__btn-search {
+        background-color: $mainBlockBackgroundColor;
+        color: $mainFontColor;
+        border: 1px solid $mainFontColor;
+    }
+
+
+    // HAMBURGER
 
     &__hamburger {
         display: flex;
