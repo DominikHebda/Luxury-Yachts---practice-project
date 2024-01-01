@@ -106,7 +106,9 @@
         padding: 0 0 0 10px;
     }
 
-// CENTER NAVOGATION
+
+
+// CENTER NAVIGATION
 
     &__nav-center {
         height: 100%;
@@ -184,6 +186,10 @@
         background-color: #c2eeeb;
     }
 
+
+
+// RIGHT NAVIGATION
+
     &__nav-right {
         display: flex;
         width: 200px;
@@ -192,6 +198,7 @@
     &__login-btn {
         padding: 19px 15px 19px 0;
         align-items: center;
+        position: relative;
     }
 
     &__cart-html {
@@ -205,6 +212,97 @@
     &__cart-items {
         margin: 0 0 0 5px;
     }
+
+// CART PREVIEW
+
+    &__cart-preview {
+        width: 300px;
+        height: 200px;
+        background-color: $mainBlockBackgroundColor;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    &__cart-title {
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #ffffff4d;
+    }
+
+    &__switch-to-cart {
+        font-family: $mainFontFamily;
+        color: $mainFontColor;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    &__ul {
+        margin: 0 0 16px 0 ;
+        padding: 0;
+        margin: 0 0 16px 0;
+    }
+
+    &__li {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ffffff1e;
+    }
+
+    &__li:hover {
+        .frontpage__remove {
+            position: absolute;
+            display: block;
+            right: 40px;
+        } 
+    }
+
+    &__li:hover{
+        .frontpage__price-amount {
+            position: absolute;
+            right: 40px;
+        }
+    }
+
+    &__product-name {
+        font-family: $mainFontFamily;
+        color: $mainFontColor;
+        text-align: left;
+    }
+
+    &__price-amount {
+        font-family: $mainFontFamily;
+        color: $mainFontColor;
+        position: relative;
+        padding: 0 10px;
+        font-weight: 700;
+    }
+
+
+    &__remove {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        margin: 0 -20px 0 0;
+        color: $mainFontColor;
+    }
+
+    &__cart-totals {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__order-btn{
+        border: 1px solid $mainFontColor;
+        padding: 8px 12px;
+        font-family: $mainFontFamily;
+        color: $mainFontColor;
+    }
+
 
     &__serchclick {
         color: $mainFontColor;
@@ -273,5 +371,9 @@
         left: 50%;
         translate: -50% 0;
     }
+
+    
+
+
 }
 
