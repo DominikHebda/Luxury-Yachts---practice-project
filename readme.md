@@ -5,7 +5,6 @@ Technology stack:
 
 - HTML
 - CSS/SCSS
-- BEM
 - JS
 - VITE
 

@@ -1,418 +1,444 @@
 .frontpage{
     width: 100%;
 
-    
-    &__bg-fluid {
+    .bg-fluid{
         background-image: url(https://veepixel.com/tf/html/yawl/assets/images/1.jpg);
         background-position: center bottom;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         height: 100vh;
-    }
 
-    &__inner-hh2 {
-        padding: 0 0 0 45px;
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    
-    &__container-fluid {
-        max-width: 1600px;
-        height: 300px;
-        top: 25%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        padding: 0 15px;
-        position: absolute;
-    }
+        .inner-hh2{
+            padding: 0 0 0 45px;
+            width: 100%;
+            height: 100%;
+            position: relative;
 
-    &__continer-text {
-        max-width: 40%;
-        width: 100%;
-        margin: 0 0 0 45px;
-        position: absolute;
-        
-    }
+            .container-fluid{
+                max-width: 1600px;
+                height: 300px;
+                top: 25%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                padding: 0 15px;
+                position: absolute;
 
-    &__h1 {
-        font-weight: 700;
-        font-size: 60px;
-        text-shadow: 11px 2px 3px rgba(0, 0, 0, 0.3);
-        font-family: $mainFontFamily;
-        color: $mainFontColor;
-        margin: 0 0 24px 0;
-    }
+                .continer-text{
+                    max-width: 40%;
+                    width: 100%;
+                    margin: 0 0 0 45px;
+                    position: absolute;
 
-    &__h5 {
-        max-width: 425px;
-        font-weight: 800;
-        font-family: $mainFontFamily;
-        color: $mainFontColorH5;
-        font-size: 4vh;
-        margin: 0 0 24px 0;
-    }
+                    h1{
+                        font-weight: 700;
+                        font-size: 60px;
+                        text-shadow: 11px 2px 3px rgba(0, 0, 0, 0.3);
+                        font-family: $mainFontFamily;
+                        color: $mainFontColor;
+                        margin: 0 0 24px 0;
+                    }
 
-    &__navigation {
-        max-width: 1600px;
-        width: 100%;
-    }
+                    h5{
+                        max-width: 425px;
+                        font-weight: 800;
+                        font-family: $mainFontFamily;
+                        color: $mainFontColorH5;
+                        font-size: 4vh;
+                        margin: 0 0 24px 0;
+                    }
+                }
+            }
+        }
 
-    &__cont-fluid {
-        background-color: $mainBackgroundColor;
-        max-width: 1600px;
-        width: 100%;
-        height: 75px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+        .navigation{
+            max-width: 1600px;
+            width: 100%;
 
-    &__nav-inner {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        background-color: #03717c80;
-    }
+            .cont-fluid{
+                background-color: $mainBackgroundColor;
+                max-width: 1600px;
+                width: 100%;
+                height: 75px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                padding: 0 15px;
 
-    &__logo-left-link {
-        padding: 0 0 0 15px;
-        display: flex;
-        justify-content: center;
-    }
+                .nav-inner{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #03717c80;
 
-    &__logo-clic {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-    }
+                    .logo-left-link{
+                        padding: 0 0 0 15px;
+                        display: flex;
+                        justify-content: center;
 
-    .fronpage__logo {
-        height: 100%;
-        max-width: 55px;
-    }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            padding: 10px;
 
-    &__acronym {
-        color: $mainFontColor;
-        font-size: 1.25rem;
-        font-family: $mainFontFamily;
-        line-height: inherit;
-        padding: 0 0 0 10px;
-    }
+                            img{
+                                height: 100%;
+                                max-width: 55px;
+                            }
 
+                            span{
+                                color: $mainFontColor;
+                                font-size: 1.25rem;
+                                font-family: $mainFontFamily;
+                                line-height: inherit;
+                                padding: 0 0 0 10px;
+                            }
+                        }
+                    }
+                    // CENTER NAVIGATION
+                    .nav-center{
+                        height: 100%;
 
+                        .my-nav{
+                            display: flex;
+                            margin: 12px 0 0 0;
 
-// CENTER NAVIGATION
+                            .dropdown{
+                                width: 100%;
+                                margin: 0 16px;
+                                white-space: nowrap;
 
-    &__nav-center {
-        height: 100%;
-    }
+                                .btn{
+                                    font-family: $mainFontFamily;
+                                    color: $mainFontColor;  
+                                    padding: 15px 15px 29px 15px;
+                                    border: none;
+                                    cursor: pointer;
+                                    background-color: $mainBackgroundColor;
+                                    display: flex;
+                                    transition: 450ms;
 
-    &__my-nav {
-        display: flex;
-        margin: 12px 0 0 0;
-    }
+                                    .triangle{
+                                        width: 0;
+                                        height: 0;
+                                        border-left: 5px solid transparent;
+                                        border-right: 5px solid transparent;
+                                        border-bottom: 6px solid #ffffff;
+                                        transform: rotate(180deg);
+                                        margin: 6px 0 0 5px;
+                                        right: 0; 
+                                    }
 
+                                    .dropdown-menu{
+                                        position: absolute;
+                                        translate: -20px 0;
+                                        top: 80%;
+                                        opacity: 0;
+                                        transition: 450ms;
 
-    &__dropdown {
-        width: 100%;
-        margin: 0 16px;
-        white-space: nowrap;
-    }
+                                        .dropdown-item{
+                                            display: flex;
+                                            width: 100%;
+                                            color: #212529;
+                                            text-align: center;
+                                            padding: 10px 24px;
+                                            margin: 0;
+                                            white-space: nowrap;
+                                            min-width: 10rem;
+                                            background-color: $mainFontColor;
+                                            transition: 450ms; 
+                                        }
 
-    &__btn {
-        font-family: $mainFontFamily;
-        color: $mainFontColor;  
-        padding: 15px 15px 29px 15px;
-        border: none;
-        cursor: pointer;
-        background-color: $mainBackgroundColor;
-        display: flex;
-        transition: 450ms;
-    }
+                                        .dropdown-item:last-child{
+                                            border-bottom-left-radius: 7px;
+                                            border-bottom-right-radius: 7px;
+                                        }
+                                    
+                                        .dropdown-item:hover{
+                                            background-color: #c2eeeb;
+                                        }
+                                    }
 
-    &__btn:hover {
-        .frontpage__dropdown-menu {
-        display: block;
-        top: 100%;
+                                }
+
+                                .btn:hover{
+                                    .dropdown-menu{
+                                        opacity: 1;
+                                        top: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // RIGHT NAVIGATION
+                    .nav-right{
+                        display: flex;
+                        width: 200px;
+
+                        .login-btn{
+                            padding: 19px 15px 19px 0;
+                            align-items: center;
+                            position: relative;
+
+                            .cart-html {
+                                color: $mainFontColor;
+                                font-family: $mainFontFamily;
+                                padding: 10px 12px;
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+
+                                .cart-items {
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+
+                            .cart-preview{
+                                opacity: 0;
+                            }
+                        }    
+                        
+                        .login-btn:hover {
+                            .cart-preview {
+                                opacity: 1;
+                                top: 100%;
+                                transition: 450ms;
+                            }
+                        }
+
+                            // CART PREVIEW
+                            .cart-preview {
+                                width: 300px;
+                                height: 200px;
+                                background-color: $mainBlockBackgroundColor;
+                                padding: 10px;
+                                position: absolute;
+                                top: 70%;
+                                left: 50%;
+                                translate: -50% 0;
+                                opacity: 0;
+                                
+                                h5 {
+                                    margin: 0 0 10px 0;
+                                    padding: 0 0 10px 0;
+                                    border-bottom: 1px solid #ffffff4d;
+
+                                    a {
+                                        font-family: $mainFontFamily;
+                                        color: $mainFontColor;
+                                        font-size: 1.25rem;
+                                        font-weight: 400;
+                                    }
+                                }
+
+                                ul {
+                                    margin: 0 0 16px 0 ;
+                                    padding: 0;
+                                    margin: 0 0 16px 0;
+
+                                    li {
+                                        padding: 10px 0;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        border-bottom: 1px solid #ffffff1e;
+
+                                        .product-name {
+                                            font-family: $mainFontFamily;
+                                            color: $mainFontColor;
+                                            text-align: left;
+                                        }
+
+                                        .price-amount {
+                                            font-family: $mainFontFamily;
+                                            color: $mainFontColor;
+                                            position: relative;
+                                            padding: 0 10px;
+                                            font-weight: 700;
+                                            transition: 450ms;
+                                        }
+
+                                        .remove {
+                                            position: absolute;
+                                            cursor: pointer;
+                                            right: 0;
+                                            margin: 0 -20px 0 0;
+                                            color: $mainFontColor;
+                                            opacity: 0;
+                                            transition: 450ms;
+                                        }
+                                    }
+
+                                    li:hover {
+                                        .remove {
+                                            position: absolute;
+                                            opacity: 1;
+                                            right: 40px;
+                                            opacity: 1;
+                                        } 
+                                    }
+                                
+                                    li:hover{
+                                        .price-amount {
+                                            position: absolute;
+                                            right: 40px;
+                                        }
+                                    }
+                                }
+
+                                .cart-totals {
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    justify-content: space-between;
+                                    
+
+                                    .order-btn{
+                                        border: 1px solid $mainFontColor;
+                                        padding: 8px 12px;
+                                        font-family: $mainFontFamily;
+                                        color: $mainFontColor;
+                                    }
+
+                                    .price-amount {
+                                        font-family: $mainFontFamily;
+                                        color: $mainFontColor;
+                                        position: relative;
+                                        padding: 0 10px;
+                                        font-weight: 700;
+                                        transition: 450ms;
+                                        display: flex;
+                                        align-items: center;
+
+                                        .price-currency{
+                                            padding: 0 5px 0 0;
+                                        }
+                                    }
+                                }
+                            } 
+
+                        .searchclick {
+                            color: $mainFontColor;
+                            padding: 3px 5px 0 5px;
+                            cursor: pointer;
+                            position: relative;
+                            background-color: $mainBackgroundColor;
+                            border: none;
+
+                            .searchclick-visible {
+                                display: block;
+                            }
+
+                            .searchclick-disabled {
+                                display: none;
+                            }
+                        }
+
+                        
+                    
+
+                        // SEARCH BAR
+
+                        .nav-search-form{
+                            display: flex;
+                            position: absolute;
+                            right: 45px;
+                            width: 36%;
+                            top: 100%;
+                            padding: 25px;
+                            background-color: $mainBlockBackgroundColor;
+
+                            .search-control {
+                                padding: 11px 12px;
+                                border: 1px solid $mainFontColor;
+                                background-color: $mainBlockBackgroundColor;
+                                color: $mainFontColor;
+                                width: 100%;
+                            }
+
+                            .btn-search {
+                                background-color: $mainBlockBackgroundColor;
+                                color: $mainFontColor;
+                                border: 1px solid $mainFontColor;
+                            }
+                        }
+
+                        .input-visible{
+                            visibility: visible;
+                        }
+
+                        .input-disabled{
+                            visibility: hidden;
+                        }
+
+                        // HAMBURGER
+
+                        .hamburger {
+                            display: flex;
+                            width: 100%;
+
+                            .button-hamb {
+                                width: 100%;
+                                padding: 4px 12px;
+                                background-color: $mainBackgroundColor;
+                                border: none;
+
+                                .hamb-inner {
+                                    padding: 15px;
+                                    cursor: pointer;
+                                    width: 40px;
+                                    height: 24px;
+                                    position: relative;
+                                    display: inline-block;
+                                    transition: 450ms;
+
+                                    .hamb-box {
+                                        width: 40px;
+                                        height: 1px;
+                                        border-radius: 4px;
+                                        background-color: $mainFontColor;
+                                        position: absolute;
+                                        left: 50%;
+                                        translate: -50% 0;
+                                    }
+
+                                    .hamb-box::after {
+                                        content: '';
+                                        width: 40px;
+                                        height: 1px;
+                                        border-radius: 4px;
+                                        background-color: $mainFontColor;
+                                        position: absolute;
+                                        top: 10px;
+                                        left: 50%;
+                                        translate: -50% 0;
+                                    }
+
+                                    .hamb-box::before {
+                                        content: '';
+                                        width: 40px;
+                                        height: 1px;
+                                        border-radius: 4px;
+                                        background-color: $mainFontColor;
+                                        position: absolute;
+                                        bottom: 10px;
+                                        left: 50%;
+                                        translate: -50% 0;
+                                    }
+                                }
+
+                                .hamb-inner:hover {
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-
-    &__triangle {
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 6px solid #ffffff;
-        transform: rotate(180deg);
-        margin: 6px 0 0 5px;
-        right: 0;   
-    }
-
-    &__dropdown-menu {
-        position: absolute;
-        translate: -20px 0;
-        top: 80%;
-        display: none;
-        transition: 450ms;
-    }
-
-
-    &__dropdown-item {
-        display: flex;
-        width: 100%;
-        color: #212529;
-        text-align: center;
-        padding: 10px 24px;
-        margin: 0;
-        white-space: nowrap;
-        min-width: 10rem;
-        background-color: $mainFontColor;
-        transition: 450ms; 
-    }
-
-    &__dropdown-item:last-child {
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px;
-    }
-
-    &__dropdown-item:hover {
-        background-color: #c2eeeb;
-    }
-
-
-
-// RIGHT NAVIGATION
-
-    &__nav-right {
-        display: flex;
-        width: 200px;
-    }
-
-    &__login-btn {
-        padding: 19px 15px 19px 0;
-        align-items: center;
-        position: relative;
-    }
-
-    &__login-btn:hover {
-        .frontpage__cart-preview {
-            display: block;
-        }
-    }
-
-    &__cart-html {
-        color: $mainFontColor;
-        font-family: $mainFontFamily;
-        padding: 10px 12px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    &__cart-items {
-        margin: 0 0 0 5px;
-    }
-
-// CART PREVIEW
-
-    &__cart-preview {
-        width: 300px;
-        height: 200px;
-        background-color: $mainBlockBackgroundColor;
-        padding: 10px;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        translate: -50% 0;
-        display: none;
-    }
-
-    &__cart-title {
-        margin: 0 0 10px 0;
-        padding: 0 0 10px 0;
-        border-bottom: 1px solid #ffffff4d;
-    }
-
-    &__switch-to-cart {
-        font-family: $mainFontFamily;
-        color: $mainFontColor;
-        font-size: 1.25rem;
-        font-weight: 400;
-    }
-
-    &__ul {
-        margin: 0 0 16px 0 ;
-        padding: 0;
-        margin: 0 0 16px 0;
-    }
-
-    &__li {
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #ffffff1e;
-    }
-
-    &__li:hover {
-        .frontpage__remove {
-            position: absolute;
-            display: block;
-            right: 40px;
-        } 
-    }
-
-    &__li:hover{
-        .frontpage__price-amount {
-            position: absolute;
-            right: 40px;
-        }
-    }
-
-    &__product-name {
-        font-family: $mainFontFamily;
-        color: $mainFontColor;
-        text-align: left;
-    }
-
-    &__price-amount {
-        font-family: $mainFontFamily;
-        color: $mainFontColor;
-        position: relative;
-        padding: 0 10px;
-        font-weight: 700;
-    }
-
-
-    &__remove {
-        display: none;
-        position: absolute;
-        cursor: pointer;
-        right: 0;
-        margin: 0 -20px 0 0;
-        color: $mainFontColor;
-    }
-
-    &__cart-totals {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__order-btn{
-        border: 1px solid $mainFontColor;
-        padding: 8px 12px;
-        font-family: $mainFontFamily;
-        color: $mainFontColor;
-    }
-
-
-    &__serchclick {
-        color: $mainFontColor;
-        display: flex;
-        align-items: center;
-        padding: 0 5px;
-        cursor: pointer;
-        position: relative;
-        
-    }
-
-    // SEARCH BAR
-
-    &__nav-search-form{
-        display: flex;
-        position: absolute;
-        right: 45px;
-        width: 36%;
-        top: 100%;
-        padding: 25px;
-        background-color: $mainBlockBackgroundColor;
-    }
-
-    &__search-control {
-        padding: 11px 12px;
-        border: 1px solid $mainFontColor;
-        background-color: $mainBlockBackgroundColor;
-        color: $mainFontColor;
-        width: 100%;
-    }
-
-    &__btn-search {
-        background-color: $mainBlockBackgroundColor;
-        color: $mainFontColor;
-        border: 1px solid $mainFontColor;
-    }
-
-
-    // HAMBURGER
-
-    &__hamburger {
-        display: flex;
-        width: 100%;
-    }
-
-    &__button-hamb {
-        width: 100%;
-        padding: 4px 12px;
-        background-color: $mainBackgroundColor;
-        border: none;
-    }
-
-    &__hamb-inner {
-        padding: 15px;
-        cursor: pointer;
-        width: 40px;
-        height: 24px;
-        position: relative;
-        display: inline-block;
-        transition: 450ms;
-    }
-
-    &__hamb-inner:hover {
-        opacity: 0.7;
-    }
-
-    &__hamb-box {
-        width: 40px;
-        height: 1px;
-        border-radius: 4px;
-        background-color: $mainFontColor;
-        position: absolute;
-        left: 50%;
-        translate: -50% 0;
-    }
-
-    &__hamb-box::after {
-        content: '';
-        width: 40px;
-        height: 1px;
-        border-radius: 4px;
-        background-color: $mainFontColor;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        translate: -50% 0;
-    }
-
-    &__hamb-box::before {
-        content: '';
-        width: 40px;
-        height: 1px;
-        border-radius: 4px;
-        background-color: $mainFontColor;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        translate: -50% 0;
-    }
-
-    
-
-
 }
 
